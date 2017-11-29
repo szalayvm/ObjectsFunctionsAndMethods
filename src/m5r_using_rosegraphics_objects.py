@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -26,9 +26,17 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              down
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#       window = rg.RoseWindow()
-#       thispointisanobject = rg.Point(20,10)
-#       window.close_on_mouse_click()
+#def test_window():
+#    window = rg.RoseWindow()
+#
+#    Point1 = rg.Point(20,10)
+#    Point2 =rg.Point(400,300)
+#
+#    Point1.attach_to(window)
+#    Point2.attach_to(window)
+#
+#    window.render()
+#    window.close_on_mouse_click()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
@@ -37,25 +45,29 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            def test_height():
+#               width = 400
+#               height = 100
+#               window = rg.RoseWindow(width,height)
+#               window.close_on_mouse_click()
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                Two types of graphics objects are SimpleTurtle and ShapeWithCenter.
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                Three methods are clone(self), mro(self), and _format_(self,format-spec)
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                Three instance variables that circle objects may have are center, fill-color, and defaults.
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            The RoseWindow RENDER method draws all objects on a window.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            A RoseWindow close_on_mouse_click method call is necessary so that a window will close on the user's discretion and so the program is easily followed with the human eye. With the multiple windows opening in this program, this function becomes necessary.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -80,7 +92,8 @@ def main():
     example1()
     example2()
     example3()
-    test_window()
+#    test_window()
+    test_height()
 
 
 def example1():
@@ -182,6 +195,11 @@ def test_window():
     Point2.attach_to(window)
 
     window.render()
+    window.close_on_mouse_click()
+def test_height():
+    width = 400
+    height = 100
+    window = rg.RoseWindow(width,height)
     window.close_on_mouse_click()
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
