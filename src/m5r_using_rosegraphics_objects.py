@@ -20,18 +20,20 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              Victoria Szalay
 #
 #        -- In what direction on the screen does the positive X-axis point?
-#             Victoria Szalay
+#             to the right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              down
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#       window = rg.RoseWindow()
+#       thispointisanobject = rg.Point(20,10)
+#       window.close_on_mouse_click()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
 #         Hint: After you type the ( in the line of code, if you wait a moment PyCharm will add the ) and has a popup.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            The default height of a RoseWindow is 300.
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
@@ -67,6 +69,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 
 
+
 def main():
     """
     Uses ROSEGRAPHICS to demonstrate:
@@ -77,6 +80,7 @@ def main():
     example1()
     example2()
     example3()
+    test_window()
 
 
 def example1():
@@ -99,8 +103,8 @@ def example2():
     point1 = rg.Point(100, 150)
     point2 = rg.Point(200, 50)
     point3 = rg.Point(0,0)
-    point4 = rg.Point(-10,20)
-    point5 = rg.Point(10,-20)
+    point4 = rg.Point(20,30)
+    point5 = rg.Point(10,20)
 
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,
@@ -168,6 +172,17 @@ def example3():
     window.close_on_mouse_click()
 
 
+def test_window():
+    window = rg.RoseWindow()
+
+    Point1 = rg.Point(20,10)
+    Point2 =rg.Point(400,300)
+
+    Point1.attach_to(window)
+    Point2.attach_to(window)
+
+    window.render()
+    window.close_on_mouse_click()
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
