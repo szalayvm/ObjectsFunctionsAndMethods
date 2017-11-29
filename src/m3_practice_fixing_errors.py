@@ -6,7 +6,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
@@ -42,10 +42,10 @@ def main():
 
 def print_math():
     """ Prints some calculated values. """
-    x = cos(pi)
+    x = math.cos(math.pi)
     print(x)
 
-    y = sin(pi)
+    y = math.sin(math.pi)
     print('The sine of PI is', y)
 
 
