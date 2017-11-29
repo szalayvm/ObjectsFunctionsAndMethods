@@ -5,8 +5,8 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- accessing their DATA via INSTANCE VARIABLES.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Victoria Szalay.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
@@ -17,10 +17,10 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              Victoria Szalay
 #
 #        -- In what direction on the screen does the positive X-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#             Victoria Szalay
 #
 #        -- In what direction on the screen does the positive Y-axis point?
 #              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
@@ -98,6 +98,9 @@ def example2():
     # ------------------------------------------------------------------
     point1 = rg.Point(100, 150)
     point2 = rg.Point(200, 50)
+    point3 = rg.Point(0,0)
+    point4 = rg.Point(-10,20)
+    point5 = rg.Point(10,-20)
 
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,
@@ -105,6 +108,9 @@ def example2():
     # ------------------------------------------------------------------
     point1.attach_to(window)
     point2.attach_to(window)
+    point3.attach_to(window)
+    point4.attach_to(window)
+    point5.attach_to(window)
 
     # ------------------------------------------------------------------
     # And they still are not DRAWN until you RENDER the window.
